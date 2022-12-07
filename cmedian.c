@@ -118,7 +118,7 @@ int main(int argc, char** argv)
                     }
                 }
                 qsort(arr,sizeof(arr)/sizeof(int),sizeof(int),compare);
-                outimg[(x-elemSize)+(y-1)*size+z] = LIMIT_UBYTE(arr[0]);
+                outimg[(x-elemSize)+(y-1)*size+z] = LIMIT_UBYTE(arr[8]);
             }
         }
     }         
