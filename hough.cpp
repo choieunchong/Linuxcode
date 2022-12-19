@@ -8,7 +8,7 @@ int main(int argc, char** argv)
     Mat img = imread(argv[1], IMREAD_COLOR);
     Mat canny, gray;
     cvtColor(img, gray, COLOR_BGR2GRAY);
-    GaussianBlur(gray, canny, Size(5, 5), 2, 2);
+    GaussianBlur(gray, canny, Size(5, 5), 2, 20);
     Canny(canny, canny, 50, 200, 3);
     int minLineLength = 10, maxLineGap = 0;
 
